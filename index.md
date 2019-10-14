@@ -19,7 +19,7 @@
 				background: -webkit-linear-gradient(145deg, rgba(182, 220, 243, 0.3), rgba(240, 219, 253, 0.5), rgba(227, 230, 202, 0.3));
 				background: linear-gradient(145deg, rgba(182, 220, 243, 0.3), rgba(240, 219, 253, 0.5), rgba(227, 230, 202, 0.3));
 
-				font-size: 0.14rem;
+				font-size: 16px;
 				color: #23262B;
 			}
 			h4{display: inline;}
@@ -105,10 +105,6 @@
 				<header>
 					<h4>本地代码回滚操作流程</h4>
 				</header>
-				git reflog 
-				查看HEAD历史
-				找到提交的历史
-				reset 到 历史
 				<p>1.git reflog 可以查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）</p>
 				<p>2.1 git reset --hard HEAD~1，退回到上一个版本，用git log则是看不出来被删除的commitid，用git reflog则可以看到被删除的commitid，我们就可以买后悔药，恢复到被删除的那个版本。</p>
 				<p style="color: lightcoral;">2.2 或者使用git reset --hard f4ad879(版本编号) 退回到指定的版本。</p>
